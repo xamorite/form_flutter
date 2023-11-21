@@ -15,19 +15,21 @@ class _formState extends State<form> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
 
         body: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
+            padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 40.0),
             child: Column(
               crossAxisAlignment:   CrossAxisAlignment.start,
              children: [
                Container(
-                 margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-                 child: Column(
+                 margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+                 child: const Column(
                    children: [
                      Text('Sign Up',
+
                       style: TextStyle(
                         color: Color(0xff53179a),
                         fontWeight: FontWeight.bold,
@@ -48,25 +50,25 @@ class _formState extends State<form> {
                   children: [
                     Container(
                       width: 300.0,
-                      margin:EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
+                      margin:const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
                       child: TextField(
                         decoration:
                         InputDecoration(
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ) ,
-                          prefixIcon: Icon(Icons.person,),
-                        prefixIconColor: Color(0xff53179a) ,
+                          prefixIcon: const Icon(Icons.person,),
+                        prefixIconColor: const Color(0xff53179a) ,
                         labelText: 'Username',
-                          border: OutlineInputBorder(),
+                          border: const OutlineInputBorder(),
                         enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                         ),
                       ),
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
 
@@ -74,25 +76,25 @@ class _formState extends State<form> {
                     ),
                     Container(
                       width: 300.0,
-                      margin:EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
+                      margin:const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
                       child: TextField(
                         decoration:
                         InputDecoration(
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ) ,
-                          prefixIcon: Icon(Icons.mail,),
-                          prefixIconColor: Color(0xff53179a) ,
+                          prefixIcon: const Icon(Icons.mail,),
+                          prefixIconColor: const Color(0xff53179a) ,
                           labelText: 'Email',
-                          border: OutlineInputBorder(),
+                          border: const OutlineInputBorder(),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ),
                         ),
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
 
@@ -100,26 +102,26 @@ class _formState extends State<form> {
                     ),
                     Container(
                       width: 300.0,
-                      margin:EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
+                      margin:const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
                       child: TextField(
                         obscureText: true,
                         decoration:
                         InputDecoration(
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ) ,
-                          prefixIcon: Icon(Icons.lock,),
-                          prefixIconColor: Color(0xff53179a),
+                          prefixIcon: const Icon(Icons.lock,),
+                          prefixIconColor: const Color(0xff53179a),
                           labelText: 'Password',
-                          border: OutlineInputBorder(),
+                          border: const OutlineInputBorder(),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ),
                         ),
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
 
@@ -127,25 +129,25 @@ class _formState extends State<form> {
                     ),
                     Container(
                       width: 300.0,
-                      margin:EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
+                      margin:const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
                       child: TextField(
                         decoration:
                         InputDecoration(
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ) ,
-                          suffix: Icon(Icons.arrow_drop_down_sharp,),
-                          suffixIconColor: Color(0xff53179a) ,
+                          suffix: const Icon(Icons.arrow_drop_down_sharp,),
+                          suffixIconColor: const Color(0xff53179a) ,
                           labelText: 'Select Your Country',
-                          border: OutlineInputBorder(),
+                          border: const OutlineInputBorder(),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ),
                         ),
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
 
@@ -153,7 +155,7 @@ class _formState extends State<form> {
                     ),
                     Container(
                       width: 300.0,
-                      margin:EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
+                      margin:const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
                       child: TextField(
 
                         decoration:
@@ -161,19 +163,19 @@ class _formState extends State<form> {
                         InputDecoration(
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ) ,
-                          suffix: Icon(Icons.arrow_drop_down_sharp,),
-                          suffixIconColor: Color(0xff53179a) ,
+                          suffix: const Icon(Icons.arrow_drop_down_sharp,),
+                          suffixIconColor: const Color(0xff53179a) ,
                           labelText: 'Select Your Language',
-                          border: OutlineInputBorder(),
+                          border: const OutlineInputBorder(),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ),
                         ),
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
 
@@ -181,25 +183,25 @@ class _formState extends State<form> {
                     ),
                     Container(
                       width: 300.0,
-                      margin:EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
+                      margin:const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
                       child: TextField(
                         decoration:
                         InputDecoration(
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ) ,
-                          suffix: Icon(Icons.arrow_drop_down_sharp,),
-                          suffixIconColor: Color(0xff53179a) ,
+                          suffix: const Icon(Icons.arrow_drop_down_sharp,),
+                          suffixIconColor: const Color(0xff53179a) ,
                           labelText: 'Select Your Currency',
-                          border: OutlineInputBorder(),
+                          border: const OutlineInputBorder(),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide( width:3, color: Color(0xff53179a)),
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: const BorderSide( width:3, color: Color(0xff53179a)),
                           ),
                         ),
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
 
@@ -211,29 +213,29 @@ class _formState extends State<form> {
                            width: 300,
                            height: 70,
 
-                           margin:EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
-                           padding:EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0) ,
+                           margin:const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0) ,
+                           padding:const EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0) ,
                            child: Expanded(
 
                              child: TextButton(
 
                                onPressed:(){},
-                                 child: Text('Sign Up',
+                             style:
+                             ButtonStyle(
+
+                               backgroundColor: const MaterialStatePropertyAll<Color>(Color(0xff53179a)),
+                               shape:  MaterialStateProperty.all<RoundedRectangleBorder>(
+                                   RoundedRectangleBorder(
+                                       borderRadius: BorderRadius.circular(20.0),
+                                       side: const BorderSide(color: Color(0xff53179a)),
+                                   )
+                               )
+                             ),
+                                 child: const Text('Sign Up',
                                  style: TextStyle(
                                    color: Colors.white,
                                  ),
                                  ),
-                             style:
-                             ButtonStyle(
-
-                               backgroundColor: MaterialStatePropertyAll<Color>(Color(0xff53179a)),
-                               shape:  MaterialStateProperty.all<RoundedRectangleBorder>(
-                                   RoundedRectangleBorder(
-                                       borderRadius: BorderRadius.circular(20.0),
-                                       side: BorderSide(color: Color(0xff53179a)),
-                                   )
-                               )
-                             ),
                              ),
                            ),
                          ),
